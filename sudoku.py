@@ -83,7 +83,7 @@ class Board:
                     self.tiles[i][j].selected = False
 
     def redraw(self, keys, wrong, time):
-        """
+        """ pygame==2.0.1 requirement
         Redraws the Sudoku board on the game window, highlighting selected, correct, and incorrect tiles, displaying the
         current wrong count and time, and rendering the current keys (potential values) for each tile.
         Args:
